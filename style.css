@@ -1,0 +1,88 @@
+:root {
+
+    /* colors */ 
+    --background: #FDFAF5;          /* fundo */
+    --foreground: #2C2416;         /* texto principal */
+    --card: #FFFFFF;               /* fundo dos cards */
+    --card-foreground: #2C2416;    /* texto dos cards */
+    --primary: #2D6A4F;            /* verde principal */
+    --primary-foreground: #FFFFFF; /* texto dos botões */
+    --secondary: #F5EEE3;          /* elementos secundários */
+    --secondary-foreground: #5C4A32;
+    --muted: #EDE5D5;              /* áreas suaves */
+    --muted-foreground: #8A7A68;   /* texto secundário */
+    --accent: #C96A3E;             /* destaque */
+    --accent-foreground: #FFFFFF;
+
+    /* others */
+    --border: #E8DDD0;             /* bordas */
+    --ring: #2D6A4F;               /* foco */
+
+    --radius: 14px;                /* arredondamento */
+
+    /* Fonts */
+    --font-heading: "DM Serif Display", serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Font sizes */
+    --font-size-logo: 32px;
+    --font-size-h1: 48px;
+    --font-size-h2: 32px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-h5: 18px
+    --font-size-body: 16px;
+    --font-size-small: 14px;
+
+    /* font-family */
+    --font-body: 'Outfit', system-ui, sans-serif;
+    --font-heading: 'Fraunces', Georgia, serif;
+}
+
+#book-swap{
+    color: var(--foreground);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-logo);
+}
+
+#get-started {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+}
+
+#sign-in {
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+}
+
+#main-title {
+    color: var(--primary);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-heading);
+}
+
+#zero-money {
+    background-color: var();
+    color: var(--color-secondary);
+    font-size: var(--font-size-h5);
+    font-family: var(--font-body);
+}
+
+#start-swapping {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+
+}
