@@ -1,105 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>BookSwap</title>
+
 </head>
+
 <body>
+
     <header>
-        <nav> 
-            <a href="#" id="logo"><img src="imagens-do-site/Bookswap.png" alt="logo" width="40" height="40"></a>
-            <a href="#" id="book-swap">BookSwap</a>
-            <a href="#how_It_Works">How it works</a>
-            <button id="theme-toggle">🌙</button>
-            <select name="language" id="language">
-                <option value="EN">English</option>
-                <option value="ES">Spanish</option>
-                <option value="PT">Portuguese</option>
-            </select>
-            <button id="sign-in">Sign in</button>
-            <button id="get-started">Get Started</button>
+
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="#" class="logo">
+                        <img src="./imagens-do-site/bookSwapLogo.png" alt="BookSwap logo" width="50 height="50">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="book-swap">BookSwap</a>
+                </li>
+
+                <li>
+                    <a href="#how-it-works" class="how-it-works">How it works</a>
+                </li>
+
+                <li>
+                    <button class="theme-toggle">🌙</button>
+                </li>
+
+                <li>
+                    <select name="language" class="language">
+                        <option value="EN">English</option>
+                        <option value="ES">Spanish</option>
+                        <option value="PT">Portuguese</option>
+                    </select>
+                </li>
+
+                <li>
+                    <button class="sign-in">Sign in</button>
+                </li>
+
+                <li>
+                    <button class="get-started">Get Started</button>
+                </li>
+
+            </ul>
+
         </nav>
+
     </header>
-    <hr>
+
+    <br><br>
+
     <main>
-        <h1 id="main-title">
-        Books go around.
-        <br>
-        Money stays in your wallet.
-        </h1>
+
         <section>
-            <h5 id="zero-money">Zero money. Pure stories.</h5>
+
+            <h5 class="zero-money">📚 Zero money. Pure stories.</h5>
+
+            <h1 class="main-title">
+
+                Books go around.
+
+                <br>
+
+                Money stays in your wallet.
+
+            </h1>
+
             <p>
-                Biblioswap is a community where readers trade books they have already loved for books they are dying to read. 
-                No money changes hands — just stories, ideas, and a little trust between book lovers.
-                Every trade means one less book abandoned on a shelf and one more reader discovering something wonderful. 
-                he only thing you might spend is a little postage — the resst is pure literary joy.
+                Biblioswap is a community where readers trade books they have already loved
+                for books they are dying to read.
+
+                No money changes hands, just stories, ideas, and a little trust between
+                book lovers.
+
+                Every trade means one less book abandoned on a shelf and one more reader
+                discovering something wonderful.
+
+                The only thing you might spend is a little postage, the rest is pure
+                literary joy.
             </p>
-            <a href="#"><button id="start-swapping">Star swapping - it's free</button></a>
+
+            <a href="#">
+                <button class="start-swapping">
+                    Start swapping - it's free
+                </button>
+            </a>
+
         </section>
+
+
         <figure>
-            <img src="imagens-do-site/bookshelf.png" alt="Colorful Bookshelf Image" width="500 height"500">
+
+            <img src="./imagens-do-site/bookshelf.png" alt="Colorful bookshelf" width="500" height="500">
+
             <figcaption>Colorful Bookshelf</figcaption>
+
         </figure>
+
+
         <br><br>
+
+
         <section>
+
             <h2>Contact us</h2>
+
             <form action="" target="_blank" method="get">
+
                 <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
 
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-                
-                <label for="message">Message</label><br>
-                <textarea name="message" id="message" rows="5" placeholder="Write your message here" maxlength="500" required></textarea><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
 
-                <label for="bookGenre">Book Genre</label><br><br>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" rows="5" placeholder="Write your message here" maxlength="500" required></textarea>
+                <br><br>
+
+                <label for="bookGenre">Book Genre</label>
+                <br><br>
+
                 <select name="bookGenre" id="bookGenre">
+
                     <option value="Romance">Romance</option>
                     <option value="Fantasy">Fantasy</option>
                     <option value="Thriller">Thriller</option>
                     <option value="Mystery">Mystery</option>
-                </select><br><br>
+
+                </select>
+
+                <br><br>
 
                 <p>What condition is the book in?</p>
-                <label for="New">New</label>
-                <input type="radio" name="condition" id="New" value="New"><br>
 
-                <label for="Good">Good</label>
-                <input type="radio" name="condition" id="Good" value="Good"><br>
+                <label for="new">New</label>
+                <input type="radio" name="condition" id="new" value="New">
 
-                <label for="Used">Used</label>
-                <input type="radio" name="condition" id="Used" value="Used"><br><br>
+                <br>
+
+                <label for="good">Good</label>
+                <input type="radio" name="condition" id="good" value="Good">
+
+                <br>
+
+                <label for="used">Used</label>
+                <input type="radio" name="condition" id="used" value="Used">
+
+                <br><br>
 
                 <p>What genres do you like?</p>
+
                 <label for="fantasy">Fantasy</label>
-                <input type="checkbox" name="genres" id="fantasy" value="fantasy"><br>
+                <input type="checkbox" name="genres" id="fantasy" value="fantasy">
+
+                <br>
+
 
                 <label for="romance">Romance</label>
-                <input type="checkbox" name="genres" id="romance" value="romance"><br>
+                <input type="checkbox" name="genres" id="romance" value="romance">
+
+                <br>
+
 
                 <label for="thriller">Thriller</label>
-                <input type="checkbox" name="genres" id="thriller" value="thriller"><br>
+                <input type="checkbox" name="genres" id="thriller" value="thriller">
+
+                <br>
+
 
                 <label for="mystery">Mystery</label>
-                <input type="checkbox" name="genres" id="mystery" value="mystery"><br><br>
+                <input type="checkbox" name="genres" id="mystery" value="mystery">
+
+                <br><br>
 
                 <button type="submit">Send</button>
 
             </form>
+
         </section>
-        <section id="how_It_Works">
-            <h2>How it works</h2>
+
+        <section class="how-it-works" id="how-it-works">
+
+            <h2>How a swap works</h2>
+
+            <h5>Five steps between you and a book you've been wanting to read.</h5>
+
+            <ol>
+
+                <li>
+
+                    <p>Find a book</p>
+
+                    <p>
+                        Browse thousands of books offered by readers near you
+                        and around the world.
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <p>Propose a swap</p>
+
+                    <p>
+                        Offer one of your books in exchange. Write a short message
+                        to break the ice.
+                    </p>
+
+                </li>
+
+                <li>
+
+                    <p>Agree together</p>
+
+                    <p>Chat directly with the other reader. No platform interference.</p>
+
+                </li>
+
+                <li>
+
+                    <p>Ship your book</p>
+
+                    <p>Send by post or arrange local pick-up. Whatever works for both of you.</p>
+
+                </li>
+
+                <li>
+
+                    <p>Enjoy & review</p>
+
+                    <p>
+                        Your new book arrives. Rate the swap and keep the cycle going.
+                    </p>
+
+                </li>
+
+            </ol>
+
+            <button class="first-swap">
+                Try your first swap
+            </button>
+
         </section>
+
     </main>
     <hr>
     <footer>
-        <h6>
-            Made by: Ingrid Vidal
-        </h6>
+
+        <h6>Made by: Ingrid Vidal</h6>
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
+

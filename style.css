@@ -1,88 +1,208 @@
 :root {
 
-    /* colors */ 
-    --background: #FDFAF5;          /* fundo */
-    --foreground: #2C2416;         /* texto principal */
-    --card: #FFFFFF;               /* fundo dos cards */
-    --card-foreground: #2C2416;    /* texto dos cards */
-    --primary: #2D6A4F;            /* verde principal */
-    --primary-foreground: #FFFFFF; /* texto dos botões */
-    --secondary: #F5EEE3;          /* elementos secundários */
+    /* Colors */
+
+    --background: #FDFAF5;
+    --foreground: #2C2416;
+
+    --card: #FFFFFF;
+    --card-foreground: #2C2416;
+
+    --primary: #2D6A4F;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #F5EEE3;
     --secondary-foreground: #5C4A32;
-    --muted: #EDE5D5;              /* áreas suaves */
-    --muted-foreground: #8A7A68;   /* texto secundário */
-    --accent: #C96A3E;             /* destaque */
+
+    --muted: #EDE5D5;
+    --muted-foreground: #8A7A68;
+
+    --accent: #C96A3E;
     --accent-foreground: #FFFFFF;
 
-    /* others */
-    --border: #E8DDD0;             /* bordas */
-    --ring: #2D6A4F;               /* foco */
+    --different-foreground: #cddad4;
 
-    --radius: 14px;                /* arredondamento */
+
+    /* Others */
+
+    --border: #E8DDD0;
+    --ring: #2D6A4F;
+    --radius: 14px;
+
 
     /* Fonts */
+
     --font-heading: "DM Serif Display", serif;
     --font-body: "Inter", sans-serif;
 
+
     /* Font sizes */
-    --font-size-logo: 32px;
+
+    --font-size-logo: 24px;
     --font-size-h1: 48px;
     --font-size-h2: 32px;
     --font-size-h3: 24px;
     --font-size-h4: 20px;
-    --font-size-h5: 18px
+    --font-size-h5: 18px;
     --font-size-body: 16px;
     --font-size-small: 14px;
 
-    /* font-family */
-    --font-body: 'Outfit', system-ui, sans-serif;
-    --font-heading: 'Fraunces', Georgia, serif;
 }
 
-#book-swap{
-    color: var(--foreground);
-    font-family: var(--font-heading);
-    font-size: var(--font-size-logo);
-}
 
-#get-started {
-    background-color: var(--primary);
-    color: var(--primary-foreground);
-    border-radius: var(--radius);
-    font-family: var(--font-body);
-}
-
-#sign-in {
-    background-color: var(--background);
-    color: var(--foreground);
-    border-radius: var(--radius);
-    font-family: var(--font-body);
-}
+/* Body */
 
 body {
+
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
+
 }
 
-#main-title {
-    color: var(--primary);
-    font-size: var(--font-size-h1);
+
+/* Menu */
+
+.menu {
+
+    background-color: var(--secondary);
+    height: 60px;
+    padding-top: 10px;
+
+}
+
+.menu ul {
+
+    display: flex;
+    gap: 120px;
+
+}
+
+.menu li {
+
+    list-style: none;
+
+}
+
+.menu li a {
+
+    text-decoration: none;
+
+}
+
+
+/* Logo and BookSwap */
+
+.book-swap {
+
+    color: var(--foreground);
     font-family: var(--font-heading);
+    font-size: var(--font-size-logo);
+
 }
 
-#zero-money {
-    background-color: var();
-    color: var(--color-secondary);
-    font-size: var(--font-size-h5);
-    font-family: var(--font-body);
+
+/* How it works link */
+
+.menu .how-it-works {
+
+    color: var(--muted-foreground);
+
 }
 
-#start-swapping {
+
+/* Get Started button */
+
+.get-started {
+
     background-color: var(--primary);
     color: var(--primary-foreground);
     border-radius: var(--radius);
     font-family: var(--font-body);
+    border: none;
 
 }
+
+
+/* Sign In button */
+
+.sign-in {
+
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    border: none;
+
+}
+
+
+/* Main title */
+
+.main-title {
+
+    color: var(--primary);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-heading);
+    font-weight: 900;
+
+}
+
+/* Zero money subtitle*/
+
+.zero-money {
+
+    background-color: var(--different-foreground);
+    color: var(--ring);
+    font-size: var(--font-size-h5);
+    font-family: var(--font-body);
+    font-weight: 700;
+    border-radius: var(--radius);
+
+}
+
+
+/* Start swapping button */
+
+.start-swapping {
+
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    border: none;
+
+}
+
+
+/* How it works section */
+
+.how-it-works h2 {
+
+    color: var(--foreground);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+
+}
+
+.how-it-works h5 {
+
+    color: var(--muted-foreground);
+    font-family: var(--font-body);
+    font-size: var(--font-size-h5);
+
+}
+
+
+/* First swap button */
+
+.first-swap {
+
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    border: none;
+
+}
+
