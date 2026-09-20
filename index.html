@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>BookSwap</title>
 
 </head>
@@ -15,167 +14,74 @@
 
         <nav class="menu">
 
-            <ul>
-                <li>
+            <div class="logo-container">
+
+                <div class="logo-positioning">
+
                     <a href="#" class="logo">
-                        <img src="./imagens-do-site/bookSwapLogo.png" alt="BookSwap logo" width="50 height="50">
+                        <img src="./imagens-do-site/bookSwapLogo.png" alt="BookSwap logo" width="50" height="50">
                     </a>
-                </li>
 
-                <li>
                     <a href="#" class="book-swap">BookSwap</a>
-                </li>
 
-                <li>
-                    <a href="#how-it-works" class="menu-how-it-works">How it works</a>
-                </li>
+                    <a href="#how-it-works" class="menu-how-it-works">
+                        How it works
+                    </a>
 
-                <li>
-                    <button class="theme-toggle">🌙</button>
-                </li>
+                </div>
 
-                <li>
+                <div class="logo-positioning-secundary">
+
+                    <button class="theme-toggle" type="button">🌙</button>
                     <select name="language" class="language">
                         <option value="EN">English</option>
                         <option value="ES">Spanish</option>
                         <option value="PT">Portuguese</option>
                     </select>
-                </li>
 
-                <li>
-                    <button class="sign-in">Sign in</button>
-                </li>
+                    <button class="sign-in" type="button">Sign in</button>
 
-                <li>
-                    <button class="get-started">Get Started</button>
-                </li>
-            </ul>
+                    <button class="get-started" type="button">Get Started</button>
+
+                </div>
+
+            </div>
+
         </nav>
 
     </header>
 
-    <br><br>
-
     <main>
 
-        <section>
+        <section class="main-section">
+            
+            <div class="main-content">
+            
+                <h5 class="zero-money">📚 Zero money. Pure stories.</h5>
+                <h1 class="main-title">Books go around. Money stays in your wallet.</h1>
 
-            <h5 class="zero-money">📚 Zero money. Pure stories.</h5>
-
-            <h1 class="main-title">
-
-                Books go around.
-
-                <br>
-
-                Money stays in your wallet.
-
-            </h1>
-
-            <p>
+                <p>
                 Biblioswap is a community where readers trade books they have already loved
                 for books they are dying to read.
-
                 No money changes hands, just stories, ideas, and a little trust between
                 book lovers.
-
                 Every trade means one less book abandoned on a shelf and one more reader
                 discovering something wonderful.
-
                 The only thing you might spend is a little postage, the rest is pure
                 literary joy. teste
-            </p>
+                </p>
+                <a href="#">
+                    <button class="start-swapping">Start swapping - it's free</button>
+                </a>
+            </div> 
 
-            <a href="#">
-                <button class="start-swapping">
-                    Start swapping - it's free
-                </button>
-            </a>
+            <div>
+                <figure class="main-carousel">
+                    <img src="./imagens-do-site/bookshelf.png" alt="Colorful bookshelf" width="500" height="500"  class="main-image">
+                    <figcaption>Colorful Bookshelf</figcaption>
+                </figure>
+            </div>
 
-        </section>
-
-        <figure>
-
-            <img src="./imagens-do-site/bookshelf.png" alt="Colorful bookshelf" width="500" height="500">
-            <figcaption>Colorful Bookshelf</figcaption>
-
-        </figure>
-
-        <br><br>
-
-        <section>
-
-            <h2>Contact us</h2>
-
-            <form action="" target="_blank" method="get">
-
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <br><br>
-
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <br><br>
-
-                <label for="message">Message</label><br>
-                <textarea name="message" id="message" rows="5" placeholder="Write your message here" maxlength="500" required></textarea>
-                <br><br>
-
-                <label for="bookGenre">Book Genre</label>
-                <br><br>
-                <select name="bookGenre" id="bookGenre">
-
-                    <option value="Romance">Romance</option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Thriller">Thriller</option>
-                    <option value="Mystery">Mystery</option>
-
-                </select>
-
-                <br><br>
-
-                <p>What condition is the book in?</p>
-
-                <label for="new">New</label>
-                <input type="radio" name="condition" id="new" value="New">
-
-                <br>
-
-                <label for="good">Good</label>
-                <input type="radio" name="condition" id="good" value="Good">
-
-                <br>
-
-                <label for="used">Used</label>
-                <input type="radio" name="condition" id="used" value="Used">
-
-                <br><br>
-
-                <p>What genres do you like?</p>
-
-                <label for="fantasy">Fantasy</label>
-                <input type="checkbox" name="genres" id="fantasy" value="fantasy">
-
-                <br>
-
-                <label for="romance">Romance</label>
-                <input type="checkbox" name="genres" id="romance" value="romance">
-
-                <br>
-
-                <label for="thriller">Thriller</label>
-                <input type="checkbox" name="genres" id="thriller" value="thriller">
-
-                <br>
-
-                <label for="mystery">Mystery</label>
-                <input type="checkbox" name="genres" id="mystery" value="mystery">
-
-                <br><br>
-
-                <button type="submit">Send</button>
-
-            </form>
 
         </section>
 
@@ -192,7 +98,6 @@
                     <p>Browse thousands of books offered by readers near you and around the world.</p>
 
                 </li>
-
 
                 <li>
 
@@ -231,14 +136,12 @@
         </section>
 
     </main>
-    
+
     <footer>
 
         <h6>Made by: Ingrid Vidal</h6>
 
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 
