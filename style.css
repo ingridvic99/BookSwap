@@ -11,8 +11,9 @@
     --primary: #2D6A4F;
     --primary-foreground: #FFFFFF;
 
-    --secondary: #F5EEE3;
+    --secondary: #f7f4f0;
     --secondary-foreground: #5C4A32;
+    --secundary-foregraound2: #fbf6ef;
 
     --muted: #EDE5D5;
     --muted-foreground: #8A7A68;
@@ -49,26 +50,15 @@
 
 }
 
-
-/* Body */
-
-body {
-
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-body);
-    font-size: var(--font-size-body);
-
-}
-
-
 /* Menu */
 
 .menu {
 
-    background-color: var(--secondary);
+    background-color: var(--background);
     height: 60px;
-    padding-top: 10px;
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: var(--border);
 
 }
 
@@ -91,6 +81,16 @@ body {
 
 }
 
+/* Body */
+
+body {
+
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+
+}
 
 /* Logo and BookSwap */
 
@@ -105,10 +105,8 @@ body {
 
 /* How it works link */
 
-.menu .how-it-works {
-
+.menu-how-it-works {
     color: var(--muted-foreground);
-
 }
 
 
@@ -172,11 +170,33 @@ body {
     border-radius: var(--radius);
     font-family: var(--font-body);
     border: none;
+    padding: 12px 24px;
+    margin-bottom: 20px;
 
 }
 
 
 /* How it works section */
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--secundary-foregraound2);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--border);
+    
+}
+
+.how-it-works ol {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
 
 .how-it-works h2 {
 
@@ -203,6 +223,7 @@ body {
     color: var(--primary-foreground);
     border-radius: var(--radius);
     border: none;
+    padding: 12px 24px;
 
 }
 
