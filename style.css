@@ -50,6 +50,10 @@
 
 }
 
+* {
+    margin: 0;
+}
+
 /* Menu */
 
 a {
@@ -60,7 +64,7 @@ a {
 
     background-color: var(--background);
     height: 50px;
-    border-bottom: 2px solid var(--border);
+    border-bottom: 1px solid var(--border);
 
 }
 
@@ -225,8 +229,8 @@ body {
     align-items: center;
     padding: 50px 100px;
     background-color: var(--secundary-foregraound2);
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     border-color: var(--border);
     
 }
