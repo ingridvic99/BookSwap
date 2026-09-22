@@ -40,11 +40,11 @@
     /* Font sizes */
 
     --font-size-logo: 24px;
-    --font-size-h1: 48px;
-    --font-size-h2: 32px;
-    --font-size-h3: 24px;
-    --font-size-h4: 20px;
-    --font-size-h5: 18px;
+    --font-size-h1: 60px;
+    --font-size-h2: 42px;
+    --font-size-h3: 26px;
+    --font-size-h4: 22px;
+    --font-size-h5: 14px;
     --font-size-body: 16px;
     --font-size-small: 14px;
 
@@ -160,7 +160,6 @@ body {
 }
 
 
-
 /* Main title */
 
 .main-section {
@@ -243,6 +242,8 @@ body {
     color: var(--foreground);
     font-family: var(--font-heading);
     font-size: var(--font-size-h2);
+    margin-bottom: 7px;
+    font-weight: 900;
 
 }
 
@@ -251,6 +252,8 @@ body {
     color: var(--muted-foreground);
     font-family: var(--font-body);
     font-size: var(--font-size-h5);
+    margin-top: 7px;
+    font-weight: 500;
 
 }
 
