@@ -40,11 +40,10 @@
     /* Font sizes */
 
     --font-size-logo: 24px;
-    --font-size-h1: 60px;
-    --font-size-h2: 42px;
-    --font-size-h3: 26px;
-    --font-size-h4: 22px;
-    --font-size-h5: 14px;
+    --font-size-h1: 62px;
+    --font-size-h2: 44px;
+    --font-size-h3: 18px;
+    --font-size-h4: 16px;
     --font-size-body: 16px;
     --font-size-small: 14px;
 
@@ -213,7 +212,7 @@ body {
     border-radius: var(--radius);
     font-family: var(--font-body);
     border: none;
-    padding: 12px 24px;
+    padding: 18px 26px;
     margin-top: 12px;
     margin-bottom: 20px;
     font-weight: 550;
@@ -234,18 +233,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 100px;
+    padding: 90px 90px;
     background-color: var(--secundary-foregraound2);
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--border);
-    
 }
 
 .how-it-works ol {
     display: flex;
     flex-direction: row;
     padding: 30px;
+    gap: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.how-it-works li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 60%;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    z-index: 1;
+}
+
+.how-it-works li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .how-it-works h2 {
@@ -258,16 +276,28 @@ body {
 
 }
 
-.how-it-works h5 {
+.how-it-works h3 {
 
     color: var(--muted-foreground);
     font-family: var(--font-body);
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-h3);
     margin-top: 7px;
+    margin-bottom: 40px;
     font-weight: 500;
 
 }
 
+.icon-box {
+    display: inline-block;
+    border: 1px solid var(--border);
+    padding: 22px 26px;
+    border-radius: var(--radius);
+    background-color: var(--primary-foreground);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(44, 36, 22, 0.15);
+    position: relative;
+    z-index: 2;
+}
 
 /* First swap button */
 
@@ -277,8 +307,8 @@ body {
     color: var(--primary-foreground);
     border-radius: var(--radius);
     border: none;
-    padding: 12px 24px;
+    padding: 18px 26px;
     font-weight: 550;
-
+    margin: 20px 20px;
 }
 
