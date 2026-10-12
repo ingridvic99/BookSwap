@@ -60,7 +60,6 @@
 }
 
 .menu {
-
     background-color: var(--background);
     height: 50px;
     border-bottom: 1px solid var(--border);
@@ -134,7 +133,6 @@
 /* Sign In button */
 
 .sign-in {
-
     background-color: var(--background);
     color: var(--foreground);
     border-radius: var(--radius);
@@ -149,7 +147,6 @@
 /* Get Started button */
 
 .get-started {
-
     background-color: var(--primary);
     color: var(--primary-foreground);
     border-radius: var(--radius);
@@ -164,7 +161,6 @@
 /* Body */
 
 body {
-
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-body);
@@ -184,7 +180,6 @@ body {
 } 
 
 .main-title {
-
     color: var(--foreground);
     font-size: var(--font-size-h1); 
     font-family: var(--font-heading);
@@ -206,7 +201,6 @@ body {
 /* Zero money subtitle*/
 
 .zero-money {
-
     background-color: var(--different-foreground);
     color: var(--ring);
     font-size: var(--font-size-small);
@@ -224,7 +218,6 @@ body {
 /* Start swapping button */
 
 .start-swapping {
-
     background-color: var(--primary);
     color: var(--primary-foreground);
     border-radius: var(--radius);
@@ -263,6 +256,7 @@ body {
 .main-image {
     border-radius: var(--radius);
     box-shadow: 0 12px 35px rgba(44, 36, 22, 0.18);
+    
 }
 
 /* How it works section */
@@ -276,6 +270,15 @@ body {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--border);
+}
+
+.how-it-works-eyebrow {
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
 }
 
 .how-it-works ol {
@@ -305,7 +308,6 @@ body {
 }
 
 .how-it-works h2 {
-
     color: var(--foreground);
     font-family: var(--font-heading);
     font-size: var(--font-size-h2);
@@ -316,7 +318,6 @@ body {
 }
 
 .how-it-works h3 {
-
     color: var(--muted-foreground);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
@@ -363,7 +364,6 @@ body {
 /* First swap button */
 
 .first-swap {
-
     background-color: var(--primary);
     color: var(--primary-foreground);
     border-radius: var(--radius);
@@ -428,3 +428,47 @@ body {
     font-size: var(--font-size-body);
     margin-top: 40px;
 }
+
+.book-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:80px 80px;
+    background-color: var(--secundary-foregraound2);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--border);
+}
+
+.book-posts-eyebrow {
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+}
+
+.book-posts h2 {
+   color: var(--foreground);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    margin-bottom: 7px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.book-posts-button {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius);
+    border: none;
+    padding: 18px 26px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    margin: 20px 20px;
+    letter-spacing: 1px;
+    font-size: var(--font-size-body);
+}
+
